@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+      integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Result Management System</h1>
+        <ul class="navbar">
+            <li>Home</li>
+            <li>Result</li>
+            <li class="univer">University
+            <ul class="nav-university"> 
+            </ul>
+            </li>
+            <li>About Us</li>
+        </ul>
+        <ul class="nav-university"> 
+
+        </ul>
+    </div>
+    <!-- navbar end here -->
+    <div class="body">
+        <div class="student">
+            <form action="student.php" method="post" class="student-panel">
+                <p>Student Panel</p>
+                <p> University Name: </p>  <select class="input" name="state">
+                    <option value="Calcutta University">Calcutta University</option>
+                    <option value="GourBanga University">GourBanga University</option>
+                    <option value="West Bengal State University">West Bengal State University</option>
+                    <option value="Kalyani University">Kalyani University</option>
+                </select>
+                <p>Exam Name</p>
+                <select name="exam" class="input">
+                    <option value="sem-1">sem-1</option>
+                    <option value="sem-2">sem-2</option>
+                    <option value="sem-3">sem-3</option>
+                    <option value="sem-4">sem-4</option>
+                    <option value="sem-5">sem-5</option>
+                    <option value="sem-6">sem-6</option>
+                </select>
+                </p>
+                <p>Regisration No</p><input class="input" type="text" name="reg" placeholder="Example:1151167">
+                <p>Roll Number:</p><input class="input" type="text" name="roll" placeholder="Example:1234678">
+                <p>Result Date:</p><input class="input" type="text" placeholder="example:2021-08-23" name="date">
+                <input type="submit" value="SUBMIT" name="sub" class="submit">
+            </form>
+        </div>
+        <div class="admin">
+            <form action="admin_login.php" method="post" class="admin-panel">
+                <p>Admin Panel</p>
+            <p>Username</p><input type="text" class="input" placeholder="Username" name="uname" required><br>
+            <p>Password: </p><input type="password" class="input" placeholder="Password" name="pass" required>
+            <input type="submit" value="LOG IN" class="submit btn" name="sub">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
